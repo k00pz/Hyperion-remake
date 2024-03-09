@@ -1,0 +1,220 @@
+-- made by Fsploit 
+-- woah you mange to fucking unlock this shit huh
+-- made by Fsploit
+-- owned by blaze
+-- Obfuscated by Gearv4 
+
+
+
+
+
+
+
+
+local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+
+local Library = DarkraiX:Window("Hyperion"," Remake 0.3","",Enum.KeyCode.RightControl);
+
+Tab1 = Library:Tab("Updates🎆")
+
+Tab1:Seperator("Hyperion Update")
+
+Tab1:Seperator("Works any executer")
+
+Tab1:Seperator("Added more things")
+
+Tab1:Seperator("Owned by Blaze")
+
+Tab1:Seperator("Made by Fsploit")
+
+Tab1:Seperator("Obfuscated by Gearv4")
+
+Tab1 = Library:Tab("Main🎆")
+
+Tab1:Seperator("Modes")
+
+Tab1:Dropdown("Mode",{"weak","normal","hardcore"},function(value)
+            print(value)
+end)
+
+Tab1:Seperator("Main")
+
+Tab1:Toggle("auto parry",false,function(value)
+
+-- ngl this is FAT
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Parry/main/auto"))()
+
+-- caseoh🤓
+
+print(value)
+    end)
+
+Tab1:Toggle("Spam button",false,function(value)
+
+-- fat code ngl
+
+local gui, frame, button = Instance.new("ScreenGui", game.CoreGui), Instance.new("Frame"), Instance.new("TextButton")
+gui.ResetOnSpawn = false
+frame.Size, frame.Position, frame.BackgroundColor3, frame.BorderSizePixel, frame.Active, frame.Draggable, frame.Parent = UDim2.new(0, 150, 0, 75), UDim2.new(0, 10, 0, 10), Color3.new(0, 0, 0), 0, true, true, gui
+button.Text, button.Size, button.Position, button.BackgroundColor3, button.BorderColor3, button.BorderSizePixel, button.Font, button.TextColor3, button.TextSize, button.Parent = "Manual spam by Fsploit", UDim2.new(1, -20, 1, -20), UDim2.new(0, 10, 0, 10), Color3.new(0, 0, 0), Color3.new(), 2, Enum.Font.SourceSans, Color3.new(1, 1, 1), 16, frame
+
+local activated = false
+
+local function toggle()
+    activated, button.Text = not activated, activated and "spam Off" or "spam On"
+    
+    while activated do
+        local args = {1.5, CFrame.new(-254.29, 112.14, -119.27) * CFrame.Angles(-2.03, 0.57, 2.31), {["2617721424"] = Vector3.new(-273.40, -724.80, -20.92)}, {910, 154}}
+        game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))
+        game:GetService("RunService").Heartbeat:Wait()
+        button.BorderColor3 = Color3.new(Color3.new(), Color3.new(), Color3.new())
+    end
+end
+
+-- above me Is thd litteral Colow XD
+
+local function showNotification()
+    game.StarterGui:SetCore("SendNotification", {Title = "Fsploit Spam on/off", Text = "Turned on", Duration = 2.1})
+end
+
+button.MouseButton1Click:Connect(function()
+    toggle()
+    showNotification()
+end)
+
+
+
+print(value)
+    end)
+Tab1:Seperator("Essential")
+
+Tab1:Button("fly v4",function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/k00pz/Flying/main/Fly-gui'))()
+    print("hi")
+end)
+
+Tab1:Button("Esp",function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Fsploitrady/main/Hi"))()
+    print("hi")
+end)
+
+Tab1:Seperator("Settings")
+
+Tab1:Button("Anti Lag",function()
+
+
+
+local ToDisable = {
+	Textures = true,
+	VisualEffects = true,
+	Parts = true,
+	Particles = true,
+	Sky = true
+}
+ 
+local ToEnable = {
+	FullBright = false
+}
+ 
+local Stuff = {}
+ 
+for _, v in next, game:GetDescendants() do
+	if ToDisable.Parts then
+		if v:IsA("Part") or v:IsA("Union") or v:IsA("BasePart") then
+			v.Material = Enum.Material.SmoothPlastic
+			table.insert(Stuff, 1, v)
+		end
+	end
+ 
+	if ToDisable.Particles then
+		if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Explosion") or v:IsA("Sparkles") or v:IsA("Fire") then
+			v.Enabled = false
+			table.insert(Stuff, 1, v)
+		end
+	end
+ 
+	if ToDisable.VisualEffects then
+		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
+			v.Enabled = false
+			table.insert(Stuff, 1, v)
+		end
+	end
+ 
+	if ToDisable.Textures then
+		if v:IsA("Decal") or v:IsA("Texture") then
+			v.Texture = ""
+			table.insert(Stuff, 1, v)
+		end
+	end
+ 
+	if ToDisable.Sky then
+		if v:IsA("Sky") then
+			v.Parent = nil
+			table.insert(Stuff, 1, v)
+		end
+	end
+end
+ 
+game:GetService("TestService"):Message("Effects Disabler Script : Successfully disabled "..#Stuff.." assets / effects. Settings :")
+ 
+for i, v in next, ToDisable do
+	print(tostring(i)..": "..tostring(v))
+end
+ 
+if ToEnable.FullBright then
+    local Lighting = game:GetService("Lighting")
+ 
+    Lighting.FogColor = Color3.fromRGB(255, 255, 255)
+    Lighting.FogEnd = math.huge
+    Lighting.FogStart = math.huge
+    Lighting.Ambient = Color3.fromRGB(255, 255, 255)
+    Lighting.Brightness = 5
+    Lighting.ColorShift_Bottom = Color3.fromRGB(255, 255, 255)
+    Lighting.ColorShift_Top = Color3.fromRGB(255, 255, 255)
+    Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)
+    Lighting.Outlines = true
+end
+
+
+
+
+    print("hi")
+end)
+
+Tab1:Toggle("Leave server",false,function(value)
+
+
+
+
+local ts = game:GetService("TeleportService")
+				local p = game:GetService("Players").LocalPlayer
+				ts:Teleport(game.PlaceId, p)
+
+
+
+print(value)
+    end)
+
+Tab1:Textbox("walk speed ","",true,function(value)
+
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Value)
+
+print(Value)
+end)
+
+Tab1:Textbox("Fov","",true,function(value)
+
+local FovNumber = tonumber(Value) --Enter your FOV number here
+local Camera = workspace.CurrentCamera
+Camera.FieldOfView = FovNumber
+
+print(Value)
+end)
+
+Tab1:Textbox("Jump Power","",true,function(value)
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(Value)
+
+print(Value)
+end)
