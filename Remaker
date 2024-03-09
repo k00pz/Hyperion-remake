@@ -1,14 +1,20 @@
 -- made by Fsploit 
--- woah you mange to fucking unlock this shit huh
+-- woah you manage to fucking unlock this shit huh dont worry this got the new gacha heat system 🔥🔥🤓🤓
 -- made by Fsploit
 -- owned by blaze
 -- Obfuscated by Gearv4 
 
 
 
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1
+notifSound.Volume = 0.35
+notifSound.SoundId = "rbxassetid://1167155503"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
 
-
-
+-- nas daily
+-- this code is fucking bad 
 
 
 local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
