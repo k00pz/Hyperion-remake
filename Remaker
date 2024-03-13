@@ -58,9 +58,15 @@ local SectionLeft = Tab:AddSection('Main',"left")
 
 local SectionRight = Tab:AddSection('Visuals',"right")
 
-SectionLeft:AddToggle('Auto parry',false,function(val)
+SectionLeft:AddToggle('Auto parry Mobile',false,function(val)
 -- start
 loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Test.lol/main/Mhm"))()
+-- end
+end)
+
+SectionLeft:AddToggle('Auto parry PC',false,function(val)
+-- start
+loadstring(game:HttpGet("https://github.com/k00pz/Parry/blob/main/Parry"))()
 -- end
 end)
 
