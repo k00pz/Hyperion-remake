@@ -1,10 +1,42 @@
--- made by Fsploit 
--- woah you manage to fucking unlock this shit huh dont worry this got the new gacha heat system 🔥🔥🤓🤓
--- made by Fsploit
--- owned by blaze
--- Obfuscated by Gearv4 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "Injected Successfully"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "Created by @deadly_fsploit on discord and exploit X:D"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
 
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "plez sub my youtube X-ploit:D"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "created by Fsploit. Owned by blaze. Obfuscated by Gearv4. #team Exploit X"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
 
 local notifSound = Instance.new("Sound",workspace)
 notifSound.PlaybackSpeed = 1
@@ -13,62 +45,36 @@ notifSound.SoundId = "rbxassetid://1167155503"
 notifSound.PlayOnRemove = true
 notifSound:Destroy()
 
--- nas daily
--- this code is fucking bad 
 
+local NEVERWIN = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERWIN/main/source.lua"))()
 
-local DarkraiX = loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Kavo-Ui/main/Darkrai%20Ui", true))()
+local Window = NEVERWIN:AddWindow("HYPERION","BLADE BALL | VERSION BETA | NEVERWIN")
 
-local Library = DarkraiX:Window("Hyperion"," Remake 0.3","",Enum.KeyCode.RightControl);
+Window:AddTabLabel('tab section')
 
-Tab1 = Library:Tab("Updates🎆")
+local Tab = Window:AddTab('Main')
 
-Tab1:Seperator("Hyperion Update")
+local SectionLeft = Tab:AddSection('Main',"left")
 
-Tab1:Seperator("Works any executer")
+local SectionRight = Tab:AddSection('Visuals',"right")
 
-Tab1:Seperator("Added more things")
-
-Tab1:Seperator("Owned by Blaze")
-
-Tab1:Seperator("Made by Fsploit")
-
-Tab1:Seperator("Obfuscated by Gearv4")
-
-Tab1 = Library:Tab("Main🎆")
-
-Tab1:Seperator("Modes")
-
-Tab1:Dropdown("Mode",{"weak","normal","hardcore"},function(value)
-            print(value)
+SectionLeft:AddToggle('Auto parry',false,function(val)
+-- start
+loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Test.lol/main/Mhm"))()
+-- end
 end)
 
-Tab1:Seperator("Main")
-
-Tab1:Toggle("auto parry",false,function(value)
-
--- ngl this is FAT
-
-loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Parry/main/auto"))()
-
--- caseoh🤓
-
-print(value)
-    end)
-
-Tab1:Toggle("Spam button",false,function(value)
-
--- fat code ngl
-
+SectionLeft:AddToggle('Manual Spam',false,function(val)
+-- start
 local gui, frame, button = Instance.new("ScreenGui", game.CoreGui), Instance.new("Frame"), Instance.new("TextButton")
 gui.ResetOnSpawn = false
 frame.Size, frame.Position, frame.BackgroundColor3, frame.BorderSizePixel, frame.Active, frame.Draggable, frame.Parent = UDim2.new(0, 150, 0, 75), UDim2.new(0, 10, 0, 10), Color3.new(0, 0, 0), 0, true, true, gui
-button.Text, button.Size, button.Position, button.BackgroundColor3, button.BorderColor3, button.BorderSizePixel, button.Font, button.TextColor3, button.TextSize, button.Parent = "Manual spam by Fsploit", UDim2.new(1, -20, 1, -20), UDim2.new(0, 10, 0, 10), Color3.new(0, 0, 0), Color3.new(), 2, Enum.Font.SourceSans, Color3.new(1, 1, 1), 16, frame
+button.Text, button.Size, button.Position, button.BackgroundColor3, button.BorderColor3, button.BorderSizePixel, button.Font, button.TextColor3, button.TextSize, button.Parent = "Manual spam", UDim2.new(1, -20, 1, -20), UDim2.new(0, 10, 0, 10), Color3.new(0, 0, 0), Color3.new(), 2, Enum.Font.SourceSans, Color3.new(1, 1, 1), 16, frame
 
 local activated = false
 
 local function toggle()
-    activated, button.Text = not activated, activated and "spam Off" or "spam On"
+    activated, button.Text = not activated, activated and "Visual spam Off" or "Visual spam On"
     
     while activated do
         local args = {1.5, CFrame.new(-254.29, 112.14, -119.27) * CFrame.Angles(-2.03, 0.57, 2.31), {["2617721424"] = Vector3.new(-273.40, -724.80, -20.92)}, {910, 154}}
@@ -78,7 +84,9 @@ local function toggle()
     end
 end
 
--- above me Is thd litteral Colow XD
+-- above me Is thd litteral Color XD
+-- NO FREE XD
+-- nawh
 
 local function showNotification()
     game.StarterGui:SetCore("SendNotification", {Title = "Fsploit Spam on/off", Text = "Turned on", Duration = 2.1})
@@ -88,139 +96,244 @@ button.MouseButton1Click:Connect(function()
     toggle()
     showNotification()
 end)
-
-
-
-print(value)
-    end)
-Tab1:Seperator("Essential")
-
-Tab1:Button("fly v4",function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/k00pz/Flying/main/Fly-gui'))()
-    print("hi")
+-- end
 end)
 
-Tab1:Button("Esp",function()
+
+SectionLeft:AddToggle('Debug mode',false,function(val)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "Failed to turn on Debug mode. Please try again later"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+	print('toggle',val)
+end)
+
+SectionLeft:AddSlider('Range',1,100,4,function(val)
+
+
+
+	print('slider ',val)
+end)
+
+
+-- Section 2
+
+SectionRight:AddToggle('Esp Radar',false,function(val)
+-- start
 loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Fsploitrady/main/Hi"))()
-    print("hi")
+-- end
+	print('toggle',val)
 end)
 
-Tab1:Seperator("Settings")
-
-Tab1:Button("Anti Lag",function()
-
-
-
-local ToDisable = {
-	Textures = true,
-	VisualEffects = true,
-	Parts = true,
-	Particles = true,
-	Sky = true
-}
- 
-local ToEnable = {
-	FullBright = false
-}
- 
-local Stuff = {}
- 
-for _, v in next, game:GetDescendants() do
-	if ToDisable.Parts then
-		if v:IsA("Part") or v:IsA("Union") or v:IsA("BasePart") then
-			v.Material = Enum.Material.SmoothPlastic
-			table.insert(Stuff, 1, v)
-		end
-	end
- 
-	if ToDisable.Particles then
-		if v:IsA("ParticleEmitter") or v:IsA("Smoke") or v:IsA("Explosion") or v:IsA("Sparkles") or v:IsA("Fire") then
-			v.Enabled = false
-			table.insert(Stuff, 1, v)
-		end
-	end
- 
-	if ToDisable.VisualEffects then
-		if v:IsA("BloomEffect") or v:IsA("BlurEffect") or v:IsA("DepthOfFieldEffect") or v:IsA("SunRaysEffect") then
-			v.Enabled = false
-			table.insert(Stuff, 1, v)
-		end
-	end
- 
-	if ToDisable.Textures then
-		if v:IsA("Decal") or v:IsA("Texture") then
-			v.Texture = ""
-			table.insert(Stuff, 1, v)
-		end
-	end
- 
-	if ToDisable.Sky then
-		if v:IsA("Sky") then
-			v.Parent = nil
-			table.insert(Stuff, 1, v)
-		end
-	end
-end
- 
-game:GetService("TestService"):Message("Effects Disabler Script : Successfully disabled "..#Stuff.." assets / effects. Settings :")
- 
-for i, v in next, ToDisable do
-	print(tostring(i)..": "..tostring(v))
-end
- 
-if ToEnable.FullBright then
-    local Lighting = game:GetService("Lighting")
- 
-    Lighting.FogColor = Color3.fromRGB(255, 255, 255)
-    Lighting.FogEnd = math.huge
-    Lighting.FogStart = math.huge
-    Lighting.Ambient = Color3.fromRGB(255, 255, 255)
-    Lighting.Brightness = 5
-    Lighting.ColorShift_Bottom = Color3.fromRGB(255, 255, 255)
-    Lighting.ColorShift_Top = Color3.fromRGB(255, 255, 255)
-    Lighting.OutdoorAmbient = Color3.fromRGB(255, 255, 255)
-    Lighting.Outlines = true
-end
-
-
-
-
-    print("hi")
+SectionRight:AddToggle('Fly v4',false,function(val)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/k00pz/Flying/main/Fly-gui'))()
+	print('toggle',val)
 end)
 
-Tab1:Toggle("Leave server",false,function(value)
+SectionRight:AddToggle('Slap Era mp.1',false,function(val)
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1
+notifSound.Volume = 0.35
+notifSound.SoundId = "rbxassetid://7023635858"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+
+	print('toggle',val)
+end)
+
+SectionRight:AddToggle('phonk mp.2',false,function(val)
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 1
+notifSound.Volume = 0.35
+notifSound.SoundId = "rbxassetid://14145620056"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+
+	print('toggle',val)
+end)
+
+SectionRight:AddToggle('phonk mp.3',false,function(val)
+
+local notifSound = Instance.new("Sound",workspace)
+notifSound.PlaybackSpeed = 0.11
+notifSound.Volume = 0.35
+notifSound.SoundId = "rbxassetid://6456729598"
+notifSound.PlayOnRemove = true
+notifSound:Destroy()
+
+	print('toggle',val)
+end)
+
+local SectionLeft = Tab:AddSection('Other scripts',"left")
+
+local SectionRight = Tab:AddSection('Settings',"right")
+
+SectionLeft:AddToggle('Simple hub x GBlade',false,function(val)
+
+{
+    Title = "Fsploit"; 
+    Text = "Successfully Injected"; 
+    Icon = ""; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+	loadstring(game:HttpGet"https://raw.githubusercontent.com/GearV4/Simple-Hub-X-Gear-SSX.lua/main/Gear%20SSX%20X%20Simple%20Hub")()
+end)
+
+SectionLeft:AddToggle('Gblade v6 ',false,function(val)
+	
+{
+    Title = "Fsploit"; 
+    Text = "Successfully Injected"; 
+    Icon = ""; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+
+loadstring(game:HttpGet("https://raw.githubusercontent.com/GearV4/GBLADE-V6/main/GBlade%20v6"))();
 
 
 
+print('toggle',val)
+end)
 
+SectionLeft:AddToggle('Fsploit blade ball 2.0',false,function(val)
+
+{
+    Title = "Fsploit"; 
+    Text = "This Script Your Executing doesn't have access to Using"; 
+    Icon = ""; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+	print('toggle',val)
+end)
+
+SectionLeft:AddToggle('Hyperion Blade ball',false,function(val)
+
+{
+    Title = "Fsploit"; 
+    Text = "This Script Your Executing doesn't have access to Using"; 
+    Icon = ""; 
+    Duration = 5;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+	print('toggle',val)
+end)
+
+-- 2nd
+
+SectionRight:AddToggle('Rejoin',false,function(val)
 local ts = game:GetService("TeleportService")
 				local p = game:GetService("Players").LocalPlayer
 				ts:Teleport(game.PlaceId, p)
-
-
-
-print(value)
-    end)
-
-Tab1:Textbox("walk speed ","",true,function(value)
-
-game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(Value)
-
-print(Value)
+	print('toggle',val)
 end)
 
-Tab1:Textbox("Fov","",true,function(value)
+SectionRight:AddToggle('Fps boost',false,function(val)
+loadstring(game:HttpGet("https://pastebin.com/raw/PkMN7QKQ"))()
+	print('toggle',val)
+end)
 
-local FovNumber = tonumber(Value) --Enter your FOV number here
+
+SectionRight:AddSlider('Fov',1,100,4,function(val)
+
+local FovNumber = tonumber(val) --Enter your FOV number here
 local Camera = workspace.CurrentCamera
 Camera.FieldOfView = FovNumber
 
-print(Value)
+print('slider ',val)
 end)
 
-Tab1:Textbox("Jump Power","",true,function(value)
+SectionRight:AddSlider('Walkspeed',1,100,4,function(val)
 
-game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(Value)
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = tonumber(val)
 
-print(Value)
+print('slider ',val)
+end)
+
+SectionRight:AddSlider('Jump Power',1,100,4,function(val)
+
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(val)
+    
+print('slider ',val)
+end)
+local Tab = Window:AddTab('info')
+
+local SectionRight = Tab:AddSection('Credits',"right")
+
+local SectionLeft = Tab:AddSection('Showcasers',"left")
+
+SectionLeft:AddToggle('Credits',false,function(val)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "Owned by Blaze"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "Created by Fsploit aka @Deadly_fsploit on discord"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "Obfuscated by Gearv4"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+	print('toggle',val)
+end)
+
+
+
+SectionRight:AddToggle('Showcasers',false,function(val)
+
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Fsploit"; 
+    Text = "No one has shocased it"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
+
+	print('toggle',val)
 end)
