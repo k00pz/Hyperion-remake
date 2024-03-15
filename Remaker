@@ -1,35 +1,6 @@
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "Injected Successfully"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "Created by @deadly_fsploit on discord and exploit X:D"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "plez sub my youtube X-ploit:D"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
+    Title = "Exploit X.lua"; 
     Text = "created by Fsploit. Owned by blaze. Obfuscated by Gearv4. #team Exploit X"; 
     Icon = ""; 
     Duration = 2;
@@ -48,7 +19,7 @@ notifSound:Destroy()
 
 local NEVERWIN = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERWIN/main/source.lua"))()
 
-local Window = NEVERWIN:AddWindow("HYPERION","BLADE BALL | VERSION BETA | NEVERWIN")
+local Window = NEVERWIN:AddWindow("Exploit X.lua","BLADE BALL | VERSION BETA | NEVERWIN")
 
 Window:AddTabLabel('tab section')
 
@@ -108,15 +79,6 @@ end)
 
 SectionLeft:AddToggle('Debug mode',false,function(val)
 
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "Failed to turn on Debug mode. Please try again later"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
 
 	print('toggle',val)
 end)
@@ -185,30 +147,13 @@ local SectionRight = Tab:AddSection('Settings',"right")
 
 SectionLeft:AddToggle('Simple hub x GBlade',false,function(val)
 
-{
-    Title = "Fsploit"; 
-    Text = "Successfully Injected"; 
-    Icon = ""; 
-    Duration = 5;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
+
 
 	loadstring(game:HttpGet"https://raw.githubusercontent.com/GearV4/Simple-Hub-X-Gear-SSX.lua/main/Gear%20SSX%20X%20Simple%20Hub")()
 end)
 
 SectionLeft:AddToggle('Gblade v6 ',false,function(val)
 	
-{
-    Title = "Fsploit"; 
-    Text = "Successfully Injected"; 
-    Icon = ""; 
-    Duration = 5;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
 
 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/GearV4/GBLADE-V6/main/GBlade%20v6"))();
@@ -220,30 +165,13 @@ end)
 
 SectionLeft:AddToggle('Fsploit blade ball 2.0',false,function(val)
 
-{
-    Title = "Fsploit"; 
-    Text = "This Script Your Executing doesn't have access to Using"; 
-    Icon = ""; 
-    Duration = 5;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
+
 
 	print('toggle',val)
 end)
 
 SectionLeft:AddToggle('Hyperion Blade ball',false,function(val)
 
-{
-    Title = "Fsploit"; 
-    Text = "This Script Your Executing doesn't have access to Using"; 
-    Icon = ""; 
-    Duration = 5;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
 
 	print('toggle',val)
 end)
@@ -284,62 +212,4 @@ SectionRight:AddSlider('Jump Power',1,100,4,function(val)
 game.Players.LocalPlayer.Character.Humanoid.JumpPower = tonumber(val)
     
 print('slider ',val)
-end)
-local Tab = Window:AddTab('info')
-
-local SectionRight = Tab:AddSection('Credits',"right")
-
-local SectionLeft = Tab:AddSection('Showcasers',"left")
-
-SectionLeft:AddToggle('Credits',false,function(val)
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "Owned by Blaze"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "Created by Fsploit aka @Deadly_fsploit on discord"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "Obfuscated by Gearv4"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
-
-	print('toggle',val)
-end)
-
-
-
-SectionRight:AddToggle('Showcasers',false,function(val)
-
-
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Fsploit"; 
-    Text = "No one has shocased it"; 
-    Icon = ""; 
-    Duration = 2;
-    Callback = bindableFunction;
-    Button1 = "";  
-    Button2 = "";
-})
-
-	print('toggle',val)
 end)
