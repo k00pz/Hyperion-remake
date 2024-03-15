@@ -1,6 +1,6 @@
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Exploit X.lua"; 
+    Title = "Neverwin.lua"; 
     Text = "created by Fsploit. Owned by blaze. Obfuscated by Gearv4. #team Exploit X"; 
     Icon = ""; 
     Duration = 2;
@@ -19,7 +19,7 @@ notifSound:Destroy()
 
 local NEVERWIN = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERWIN/main/source.lua"))()
 
-local Window = NEVERWIN:AddWindow("Exploit X.lua","BLADE BALL | VERSION BETA | NEVERWIN")
+local Window = NEVERWIN:AddWindow("Neverwin.lua","BLADE BALL | VERSION BETA | NEVERWIN")
 
 Window:AddTabLabel('tab section')
 
