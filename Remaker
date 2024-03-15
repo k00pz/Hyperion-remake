@@ -1,3 +1,9 @@
+if game.PlaceId == 4777817887 then
+    if game.PlaceId ~= 4777817887 then
+        game:GetService("Players").LocalPlayer:Kick("You joined the wrong game. Game name: Blade Ball")
+    end
+end
+
 
 game.StarterGui:SetCore("SendNotification", {
     Title = "Neverwin.lua"; 
