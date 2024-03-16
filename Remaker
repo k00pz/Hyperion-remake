@@ -1,12 +1,12 @@
-if game.PlaceId == 4777817887 then
-    if game.PlaceId ~= 4777817887 then
+if game.PlaceId == 13772394625 then
+    if game.PlaceId ~= 13772394625 then
         game:GetService("Players").LocalPlayer:Kick("You joined the wrong game. Game name: Blade Ball")
     end
 end
 
 
 game.StarterGui:SetCore("SendNotification", {
-    Title = "Neverwin.lua"; 
+    Title = "Neverlose.net"; 
     Text = "created by Fsploit. Owned by blaze. Obfuscated by Gearv4. #team Exploit X"; 
     Icon = ""; 
     Duration = 2;
