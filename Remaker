@@ -25,7 +25,7 @@ notifSound:Destroy()
 
 local NEVERWIN = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERWIN/main/source.lua"))()
 
-local Window = NEVERWIN:AddWindow("Neverlose.net","BLADE BALL | VERSION BETA | NEVELOSE")
+local Window = NEVERWIN:AddWindow("Neverlose.net","BLADE BALL | VERSION BETA | BY FSPLOIT")
 
 Window:AddTabLabel('tab section')
 
