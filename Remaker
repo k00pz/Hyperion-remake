@@ -42,6 +42,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/k00pz/Test.lol/main/M
 end)
 
 SectionLeft:AddToggle('Auto parry PC',false,function(val)
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Neverlose.net"; 
+    Text = "Press F to turn on"; 
+    Icon = ""; 
+    Duration = 2;
+    Callback = bindableFunction;
+    Button1 = "";  
+    Button2 = "";
+})
 -- start
 loadstring(game:HttpGet("https://github.com/k00pz/Parry/blob/main/Parry"))()
 -- end
